@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nao Chat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <header class="title-container">
+      <h1><span class="nao">nao*</span> chat</h1>
+    </header>
+    <section class="language-container">
+      <div class="language-inner-container">
+        <div class="language-switcher" id="left-switcher">
+          <div class="selected-language">
+            <span class="fi fi-in"></span>
+            <span>Hindi</span>
+            <svg
+              class="dropdown-arrow"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 6L8 10L12 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="language-options">
+            <div class="language-option" data-lang="en">
+              <span class="fi fi-gb"></span>
+              <span>English</span>
+            </div>
+            <div class="language-option" data-lang="es">
+              <span class="fi fi-es"></span>
+              <span>Español</span>
+            </div>
+            <div class="language-option" data-lang="fr">
+              <span class="fi fi-fr"></span>
+              <span>Français</span>
+            </div>
+            <div class="language-option" data-lang="de">
+              <span class="fi fi-de"></span>
+              <span>Deutsch</span>
+            </div>
+            <div class="language-option" data-lang="it">
+              <span class="fi fi-it"></span>
+              <span>Italiano</span>
+            </div>
+            <div class="language-option" data-lang="in">
+              <span class="fi fi-in"></span>
+              <span>Hindi</span>
+            </div>
+          </div>
+        </div>
+        <button class="language-reverse-button">
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        </button>
+        <div class="language-switcher" id="right-switcher">
+          <div class="selected-language">
+            <span class="fi fi-gb"></span>
+            <span>English</span>
+            <svg
+              class="dropdown-arrow"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 6L8 10L12 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="language-options">
+            <div class="language-option" data-lang="en">
+              <span class="fi fi-gb"></span>
+              <span>English</span>
+            </div>
+            <div class="language-option" data-lang="es">
+              <span class="fi fi-es"></span>
+              <span>Español</span>
+            </div>
+            <div class="language-option" data-lang="fr">
+              <span class="fi fi-fr"></span>
+              <span>Français</span>
+            </div>
+            <div class="language-option" data-lang="de">
+              <span class="fi fi-de"></span>
+              <span>Deutsch</span>
+            </div>
+            <div class="language-option" data-lang="it">
+              <span class="fi fi-it"></span>
+              <span>Italiano</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="chat-container" id="chat-container"></section>
+    <section class="recorder-container">
+      <div class="record-button" id="record-button">
+        <div class="record-button-outer">
+          <div class="record-button-inner">
+            <i class="fa-solid fa-microphone"></i>
+          </div>
+        </div>
+      </div>
+      <div class="stop-button hidden" id="stop-button">
+        <div class="stop-button-inner">
+          <i class="fa-solid fa-stop"></i>
+        </div>
+        <span class="recording-time" id="recording-time">00:00</span>
+      </div>
+    </section>
+  </body>
+</html>
