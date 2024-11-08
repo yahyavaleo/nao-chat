@@ -28,7 +28,7 @@ python3 -m http.server 8000 --bind localhost
 
 Alternatively, you can use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) to launch the web app.
 
-This app was only tested on Google Chrome (Version 130.0), if you encounter an error while using this app on other browsers, feel free to open a pull request.
+This app was only tested on Google Chrome (version 130.0), if you encounter an error while using this app on other browsers, feel free to open an issue.
 
 ## User Guide
 
