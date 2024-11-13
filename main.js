@@ -385,7 +385,7 @@ async function sendAudioToDeepgram(audioBlob) {
 const DEEPGRAM_TTS_CONFIG = {
   endpoint: "https://api.deepgram.com/v1/speak",
   headers: {
-    Authorization: "TOKEN API_KEY",
+    Authorization: "TOKEN 003951a4648e7f5096b84e5b54ef0ccdcd572303",
     "Content-Type": "application/json",
   },
 };
@@ -393,14 +393,14 @@ const DEEPGRAM_TTS_CONFIG = {
 const DEEPGRAM_STT_CONFIG = {
   endpoint: "https://api.deepgram.com/v1/listen",
   headers: {
-    Authorization: "Token API_KEY",
+    Authorization: "Token 003951a4648e7f5096b84e5b54ef0ccdcd572303",
     "Content-Type": "audio/webm",
   },
 };
 
 const GEMINI_CONFIG = {
   endpoint:
-    "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=API_KEY",
+    "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyCCrDQ1LCLfppnUAlQLDF7tKuIACYHuQs4",
   headers: {
     "Content-Type": "application/json",
   },
